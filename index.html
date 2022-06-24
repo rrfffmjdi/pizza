@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> pizza</title></head>
+    <body>
+        <h1> pizza</h1>
+        
+            <input id="menutextbox" placeholder="typehere" type="text">
+
+<button id="yourmenu" 
+onclick="display()">YOUR ORDER</button>
+ 
+
+<h2 id="ym">
+yourfav
+</h2>
+<h2 id="koo">
+    Margherita,The Cheese Dominator,The 4 Cheese Pizza,Farmhouse,Veggie Paradise
+</h2>
+
+<script> 
+ 
+
+function display () {
+    var gotitem = document.getElementById("menutextbox").value;
+ console.log(gotitem)  ;
+ document.getElementById("menutextbox").value=" " ;
+ document.getElementById("ym").innerHTML= gotitem;
+}
+
+
+
+
+</script>
+   
+
+    </body>
+</html>
